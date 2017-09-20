@@ -15,11 +15,13 @@ redRectangle = RectangleAsset(200,100,blackOutline,red) #width, height, outline,
 blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 greenEllipse = EllipseAsset(100,50,blackOutline,green) #horiz_radius, vertical_radius, outline, fill
 blackLine = LineAsset(50,160,blackOutline) #x_endpoint, y_endpoint, lineStyle
-redTriangle = PolygonAsset([(0,0),(120,180),(60,300)], blackOutline,red) #list of endpoints, outline, fill
+redTriangle = PolygonAsset([(0,0),(120,180),(60,300)],blackOutline,red) #list of endpoints, outline, fill
+text = TextAsset('Diego',fill=green,style='bold 40pt Times') #Text
 
 Sprite(redRectangle)
 Sprite(blueCircle,(50,50))
 Sprite(greenEllipse,(200,400))
 Sprite(blackLine)
 Sprite(redTriangle)
+Sprite(text, (300,200))
 App().run()
