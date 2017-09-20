@@ -16,7 +16,7 @@ blueCircle = CircleAsset(50,blackOutline,blue) #radius, outline, fill
 greenEllipse = EllipseAsset(100,50,blackOutline,green) #horiz_radius, vertical_radius, outline, fill
 blackLine = LineAsset(50,160,blackOutline) #x_endpoint, y_endpoint, lineStyle
 redTriangle = PolygonAsset([(0,0),(120,180),(60,300)],blackOutline,red) #list of endpoints, outline, fill
-text = TextAsset('Diego',fill=green,style='bold 40pt Times') #Text
+text = TextAsset('Diego',fill=green,style='bold 40pt Times') #text, fill, style
 
 Sprite(redRectangle)
 Sprite(blueCircle,(50,50))
