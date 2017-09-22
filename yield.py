@@ -9,7 +9,7 @@ yellow = Color(0xFFFF00,1)
 
 blackoutline = LineStyle(7,black)
 
-yellowtriangle = PolygonAsset([(20,0), (0,30), (40,30)], blackoutline, yellow)
+yellowtriangle = PolygonAsset([(80,0), (0,120), (160,120)], blackoutline, yellow)
 
 Sprite(yellowtriangle)
 App().run()
