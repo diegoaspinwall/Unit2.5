@@ -13,18 +13,13 @@ blackLinex = LineAsset(0,400,blackOutline)
 blackLiney = LineAsset(400,0,blackOutline)
 xt = LineAsset(0,10,blackOutline)
 yt = LineAsset(10,0,blackOutline)
+
 xpt = float(input('X = '))
 ypt = float(input('Y = '))
 redCircle = CircleAsset(2,blackOutline,red)
 
-if xpt<0:
-    xreal = 200-(abs(xpt)*40)
-else:
-    xreal = 200+xpt*40
-if ypt<0:
-    yreal = 200+ypt*40
-else:
-    yreal = 200-(abs(ypt)*40)
+xreal = (40*xpt)+200
+yreal = -((40*ypt)-200)
 
 Sprite(blackLinex, (200,0))
 Sprite(blackLiney, (0,200))
@@ -44,5 +39,5 @@ Sprite(yt, (195,240))
 Sprite(yt, (195,280))
 Sprite(yt, (195,320))
 Sprite(yt, (195,360))
-Sprite(redCircle, (xreal,yreal))
+Sprite(redCircle, (xreal, yreal))
 App().run()
