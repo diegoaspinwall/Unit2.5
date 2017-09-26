@@ -17,6 +17,9 @@ xpt = int(input('X = '))
 ypt = int(input('Y = '))
 redCircle = CircleAsset(2,blackOutline,red)
 
+xreal = xpt*40+200
+yreal = ypt*40+200
+
 Sprite(blackLinex, (200,0))
 Sprite(blackLiney, (0,200))
 Sprite(xt, (40,195))
@@ -35,5 +38,5 @@ Sprite(yt, (195,240))
 Sprite(yt, (195,280))
 Sprite(yt, (195,320))
 Sprite(yt, (195,360))
-Sprite(redCircle, ())
+Sprite(redCircle, (xreal,yreal))
 App().run()
