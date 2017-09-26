@@ -13,12 +13,18 @@ blackLinex = LineAsset(0,400,blackOutline)
 blackLiney = LineAsset(400,0,blackOutline)
 xt = LineAsset(0,10,blackOutline)
 yt = LineAsset(10,0,blackOutline)
-xpt = int(input('X = '))
-ypt = int(input('Y = '))
+xpt = float(input('X = '))
+ypt = float(input('Y = '))
 redCircle = CircleAsset(2,blackOutline,red)
 
-xreal = xpt*40+200
-yreal = ypt*40+200
+if xpt<0:
+    xreal = 200-(abs(xpt)*40)
+else:
+    xreal = 200+xpt*40
+if ypt<0:
+    yreal = 200+ypt*40
+else:
+    yreal = 200-(abs(ypt)*40)
 
 Sprite(blackLinex, (200,0))
 Sprite(blackLiney, (0,200))
