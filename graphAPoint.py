@@ -9,7 +9,9 @@ black = Color(0x000000,1)
 
 blackOutline = LineStyle(1,black)
 
-blackLine = LineAsset(0,200,blackOutline) 
+blackLinex = LineAsset(0,800,blackOutline) 
+blackLiney = LineAsset(800,0,blackOutline) 
 
-Sprite(blackLine, (200,0))
+Sprite(blackLinex, (400,0))
+Sprite(blackLiney, (0,400))
 App().run()
